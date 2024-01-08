@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: rgb(174, 195, 233);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        .body_dark {
+            background-color: #323086;
+            color: white;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(216, 244, 255);
+            box-shadow: 0px 5px 10px rgb(39, 39, 39);
+            height: 70px;
+        }
+        
+        .header_dark {
+            background-color: #212057;
+            color: white;
+        }
+
+        table {
+            border: 2px outset black;
+            border-spacing: 0;
+            margin: 50px auto 0;
+        }
+        
+        td {
+            border: 2px outset black;
+            width: 50px;
+            height: 50px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+
+        td img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .unactive {
+            background-color: rgb(133, 133, 133);
+        }
+
+        .unactive:hover {
+            background-color: rgb(100, 100, 100);
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: white;
+            border-style: solid;
+        }
+
+        .stats {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            background-color: cornflowerblue;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border: 0;
+            width: 130px;
+            height: 50px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        .button_dark {
+            background-color: #514ED9;
+        }
+
+        button:hover {
+            background-color: rgb(82, 122, 197);
+            cursor: pointer;
+        }
+
+        .end-message {
+            font-size: 100px;
+            text-align: center;
+        }
+
+        .end-stats {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media(max-width:600px){
+            td{
+                width: 25px;
+                height: 25px;
+            }
+
+            td img{
+                width: 15px;
+                height: 15px;
+            }
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+
+</body>
+</html>
